@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CellTest2
 //
-//  Created by Don Mini on 7/4/17.
+//  Created by DonMag on 7/4/17.
 //  Copyright © 2017 DonMag. All rights reserved.
 //
 

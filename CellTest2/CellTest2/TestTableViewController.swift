@@ -1,12 +1,13 @@
 //
-//  StackLabelsTableViewController.swift
-//  SWTempy
+//  TestTableViewController.swift
+//  CellTest2
 //
 //  Created by DonMag on 7/4/17.
 //  Copyright © 2017 DonMag. All rights reserved.
 //
 
 import UIKit
+
 
 class TestBCell: UITableViewCell {
 	
@@ -17,17 +18,17 @@ class TestBCell: UITableViewCell {
 	@IBOutlet weak var rightLabel: UILabel!
 }
 
-class StackLabelsTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class TestTableViewController: UITableViewController {
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		tableView.rowHeight = UITableViewAutomaticDimension
 		tableView.estimatedRowHeight = 80
-    }
-
-    // MARK: - Table view data source
-
+	}
+	
+	// MARK: - Table view data source
+	
 	override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
 		return 60
 	}
@@ -40,18 +41,22 @@ class StackLabelsTableViewController: UITableViewController {
 		return v
 	}
 	
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 7
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "testA", for: indexPath) as! TestACell
+	override func numberOfSections(in tableView: UITableView) -> Int {
+		return 7
+	}
+	
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 1
+	}
+	
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		
+		// cell with "testB" identifier has NO width limit on Left Labels
+		// cell with "testC" identifier has Left Labels width constrained to <= 200 (just arbirary number for demonstration)
+		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "testB", for: indexPath) as! TestBCell
-
+//		let cell = tableView.dequeueReusableCell(withIdentifier: "testC", for: indexPath) as! TestBCell
+		
 		switch indexPath.section {
 		case 0:
 			cell.leftLabel1?.text = "Label1 aabbccdd"
@@ -64,7 +69,7 @@ class StackLabelsTableViewController: UITableViewController {
 			cell.leftLabel2?.text = "Label2 aabbccdd"
 			cell.rightLabel?.text = "Cell \(indexPath.row) with a 'really really' long string that needs displaying clearly and causing the table cell to resize to fit the content. We're looking for about 3 or 4 lines of text to be displayed"
 			break
-
+			
 		case 1:
 			cell.leftLabel1?.text = "Label1 aabbccdd"
 			cell.leftLabel2?.text = "Label2 aabbccdd"
@@ -103,27 +108,7 @@ class StackLabelsTableViewController: UITableViewController {
 			
 		}
 		
-//		if indexPath.section == 0
-//		{
-//			cell.leftLabel1?.text = "Label1" // "Label1 aabbccdd"
-//			cell.leftLabel2?.text = "Label2 aabbccdd"
-//			cell.rightLabel?.text = "Cell \(indexPath.row) with a 'really really' long string that needs displaying clearly and causing the table cell to resize to fit the content. We're looking for about 3 or 4 lines of text to be displayed"
-//		}
-//		else if indexPath.section == 1
-//		{
-//			cell.leftLabel1?.text = "Label1 aabbccdd"
-//			cell.leftLabel2?.text = "Label2" //"Label2 aabbccdd"
-//			cell.rightLabel?.text = "Cell \(indexPath.row) with a 'really really really' long string that needs displaying clearly and causing the table cell to resize to fit the content. We're looking for about 3 or 4 lines of text to be displayed"
-//		}
-//		else
-//		{
-//			cell.leftLabel1?.text = "Label1 aabbccdd"
-//			cell.leftLabel2?.text = "Label2 aabbccdd"
-//			cell.rightLabel?.text = "One line" // "Cell \(indexPath.row) with a 'really really really really really really really really' long string that needs displaying clearly and causing the table cell to resize to fit the content. We're looking for about 3 or 4 lines of text to be displayed"
-//		}
-		
-
-        return cell
-    }
-
+		return cell
+	}
+	
 }
