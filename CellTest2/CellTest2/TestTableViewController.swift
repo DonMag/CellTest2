@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class TestBCell: UITableViewCell {
 	
 	@IBOutlet weak var leftLabel1: UILabel!
@@ -51,8 +50,8 @@ class TestTableViewController: UITableViewController {
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
-		// cell with "testB" identifier has NO width limit on Left Labels
-		// cell with "testC" identifier has Left Labels width constrained to <= 200 (just arbirary number for demonstration)
+		// cell with "testB" identifier (red background) has NO width limit on Left Labels
+		// cell with "testC" identifier (blue background) has Left Labels width constrained to <= 200 (just arbirary number for demonstration)
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "testB", for: indexPath) as! TestBCell
 //		let cell = tableView.dequeueReusableCell(withIdentifier: "testC", for: indexPath) as! TestBCell
