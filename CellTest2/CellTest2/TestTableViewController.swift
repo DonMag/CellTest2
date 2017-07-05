@@ -42,7 +42,7 @@ class TestTableViewController: UITableViewController {
 	}
 	
 	override func numberOfSections(in tableView: UITableView) -> Int {
-		return 7
+		return 8
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -95,6 +95,12 @@ class TestTableViewController: UITableViewController {
 			break
 			
 		case 6:
+			cell.leftLabel1?.text = "Short"
+			cell.leftLabel2?.text = "Shorter"
+			cell.rightLabel?.text = "Cell \(indexPath.row) with a 'really really' long string that needs displaying clearly and causing the table cell to resize to fit the content. We're looking for about 3 or 4 lines of text to be displayed"
+			break
+			
+		case 7:
 			cell.leftLabel1?.text = "The text for this Label takes up too much room!"
 			cell.leftLabel2?.text = "Label2 aabbccdd"
 			cell.rightLabel?.text = "That might be a problem, unless you have length limits on the left."
