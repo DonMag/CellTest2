@@ -45,30 +45,32 @@ class TableViewController: UITableViewController {
 	{
 		// Configure the cell...
 		
-		switch (indexPath.row % 3) + 3 {
-		case 1:
-			// let case 1 fall through to default
-			break
-			
-		case 2:
-			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! TableViewCell2
-			cell.leftLabel1.text = leftText1
-			cell.leftLabel2.text = leftText2
-			cell.rightLabel.text = rightText
-			return cell
-			
-		case 3:
+		// We'll go Cell 3 / Cell 2 / Cell 1 / etc....
+		
+		switch indexPath.row % 3 {
+		case 0:
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3", for: indexPath) as! TableViewCell3
 			cell.leftLabel1.text = leftText1
 			cell.leftLabel2.text = leftText2
 			cell.rightLabel.text = rightText
 			return cell
 			
+		case 1:
+			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath) as! TableViewCell1
+			cell.leftLabel1.text = leftText1
+			cell.leftLabel2.text = leftText2
+			cell.rightLabel.text = rightText
+			return cell
+			
+		case 2:
+			// let case 2 fall through to default
+			break
+			
 		default:
 			break
 		}
 
-		let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath) as! TableViewCell1
+		let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! TableViewCell2
 		cell.leftLabel1.text = leftText1
 		cell.leftLabel2.text = leftText2
 		cell.rightLabel.text = rightText
