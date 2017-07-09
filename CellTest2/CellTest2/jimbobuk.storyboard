@@ -160,7 +160,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-HR-dVP">
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-HR-dVP">
                                             <rect key="frame" x="16" y="60.5" width="200" height="49.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJd-WU-f5f">
@@ -181,11 +181,13 @@
                                             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="0YH-nB-3Cx"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dJd-WU-f5f" secondAttribute="trailing" id="2oy-lR-Hv0"/>
                                                 <constraint firstItem="9UR-yA-dIY" firstAttribute="leading" secondItem="4JD-HR-dVP" secondAttribute="leading" id="FfG-Mb-Pwk"/>
                                                 <constraint firstItem="9UR-yA-dIY" firstAttribute="top" secondItem="dJd-WU-f5f" secondAttribute="bottom" constant="7.5" id="FwN-qk-90Z"/>
                                                 <constraint firstItem="dJd-WU-f5f" firstAttribute="top" secondItem="4JD-HR-dVP" secondAttribute="top" id="Grh-Nh-r3y"/>
                                                 <constraint firstAttribute="bottom" secondItem="9UR-yA-dIY" secondAttribute="bottom" id="WTU-Bk-NfC"/>
-                                                <constraint firstAttribute="width" constant="200" id="bPQ-L2-WIQ"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="bPQ-L2-WIQ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9UR-yA-dIY" secondAttribute="trailing" id="guI-AT-eA5"/>
                                                 <constraint firstItem="dJd-WU-f5f" firstAttribute="leading" secondItem="4JD-HR-dVP" secondAttribute="leading" id="j0p-LB-2Mf"/>
                                             </constraints>
                                         </view>
