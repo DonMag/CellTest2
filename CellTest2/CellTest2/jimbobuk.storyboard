@@ -193,8 +193,10 @@
                                         </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="4JD-HR-dVP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="J1m-DH-kVd" secondAttribute="topMargin" id="1lU-or-UtW"/>
                                         <constraint firstItem="4JD-HR-dVP" firstAttribute="leading" secondItem="J1m-DH-kVd" secondAttribute="leadingMargin" constant="8" id="2L4-Sx-mwl"/>
                                         <constraint firstItem="4JD-HR-dVP" firstAttribute="centerY" secondItem="J1m-DH-kVd" secondAttribute="centerY" id="3x0-GB-RRe"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="4JD-HR-dVP" secondAttribute="bottom" id="KIq-Zt-YeH"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
