@@ -191,12 +191,23 @@
                                                 <constraint firstItem="dJd-WU-f5f" firstAttribute="leading" secondItem="4JD-HR-dVP" secondAttribute="leading" id="j0p-LB-2Mf"/>
                                             </constraints>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Side Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmL-Jk-Z5g">
+                                            <rect key="frame" x="275" y="78" width="92" height="14.5"/>
+                                            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="4JD-HR-dVP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="J1m-DH-kVd" secondAttribute="topMargin" id="1lU-or-UtW"/>
                                         <constraint firstItem="4JD-HR-dVP" firstAttribute="leading" secondItem="J1m-DH-kVd" secondAttribute="leadingMargin" constant="8" id="2L4-Sx-mwl"/>
                                         <constraint firstItem="4JD-HR-dVP" firstAttribute="centerY" secondItem="J1m-DH-kVd" secondAttribute="centerY" id="3x0-GB-RRe"/>
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="4JD-HR-dVP" secondAttribute="bottom" id="KIq-Zt-YeH"/>
+                                        <constraint firstItem="BmL-Jk-Z5g" firstAttribute="centerY" secondItem="J1m-DH-kVd" secondAttribute="centerY" id="Tgf-dH-Agu"/>
+                                        <constraint firstItem="BmL-Jk-Z5g" firstAttribute="top" relation="greaterThanOrEqual" secondItem="J1m-DH-kVd" secondAttribute="topMargin" id="YZB-g6-atm"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="BmL-Jk-Z5g" secondAttribute="bottom" id="b0J-MC-JmK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BmL-Jk-Z5g" secondAttribute="trailing" id="lup-Tc-al4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
