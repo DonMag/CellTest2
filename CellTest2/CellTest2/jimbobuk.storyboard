@@ -159,20 +159,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="85m-kO-XDI" id="J1m-DH-kVd">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqc-m4-YUw">
-                                            <rect key="frame" x="16" y="35" width="200" height="100"/>
-                                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="buf-fL-R0O"/>
-                                                <constraint firstAttribute="width" constant="200" id="tYF-ak-xEf"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Xqc-m4-YUw" firstAttribute="centerY" secondItem="J1m-DH-kVd" secondAttribute="centerY" id="BX7-dC-eFf"/>
-                                        <constraint firstItem="Xqc-m4-YUw" firstAttribute="leading" secondItem="J1m-DH-kVd" secondAttribute="leadingMargin" constant="8" id="Bba-lc-bRW"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
