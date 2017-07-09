@@ -161,7 +161,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-HR-dVP">
-                                            <rect key="frame" x="16" y="60.5" width="239" height="49.5"/>
+                                            <rect key="frame" x="16" y="60.5" width="220" height="49.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJd-WU-f5f">
                                                     <rect key="frame" x="0.0" y="0.0" width="88" height="21"/>
@@ -185,14 +185,21 @@
                                                 <constraint firstItem="9UR-yA-dIY" firstAttribute="leading" secondItem="4JD-HR-dVP" secondAttribute="leading" id="FfG-Mb-Pwk"/>
                                                 <constraint firstItem="9UR-yA-dIY" firstAttribute="top" secondItem="dJd-WU-f5f" secondAttribute="bottom" constant="7.5" id="FwN-qk-90Z"/>
                                                 <constraint firstItem="dJd-WU-f5f" firstAttribute="top" secondItem="4JD-HR-dVP" secondAttribute="top" id="Grh-Nh-r3y"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="MNF-yf-euZ"/>
                                                 <constraint firstAttribute="bottom" secondItem="9UR-yA-dIY" secondAttribute="bottom" id="WTU-Bk-NfC"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="bPQ-L2-WIQ"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9UR-yA-dIY" secondAttribute="trailing" id="guI-AT-eA5"/>
                                                 <constraint firstItem="dJd-WU-f5f" firstAttribute="leading" secondItem="4JD-HR-dVP" secondAttribute="leading" id="j0p-LB-2Mf"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="oCp-fs-lRT"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="MNF-yf-euZ"/>
+                                                </mask>
+                                            </variation>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Side Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmL-Jk-Z5g">
-                                            <rect key="frame" x="275" y="78" width="92" height="14.5"/>
+                                            <rect key="frame" x="256" y="78" width="111" height="14.5"/>
                                             <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" priority="250" constant="40" id="izN-85-ph6"/>

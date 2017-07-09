@@ -45,7 +45,7 @@ class TableViewController: UITableViewController {
 	{
 		// Configure the cell...
 		
-		switch (indexPath.row % 3) + 1 {
+		switch (indexPath.row % 3) + 3 {
 		case 1:
 			// let case 1 fall through to default
 			break
