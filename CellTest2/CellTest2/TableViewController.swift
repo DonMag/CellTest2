@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
 	
-	var rightText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at lacus quis leo eleifend viverra in a est. Curabitur elit urna, lobortis et justo ut, aliquam imperdiet sapien. Maecenas gravida ante vitae hendrerit congue. Phasellus id erat ligula. Duis malesuada condimentum mattis. Donec tellus diam, rutrum sit amet nisl ultricies, accumsan commodo risus. Vestibulum elit ante, mollis nec enim at, imperdiet dictum erat. Proin laoreet dolor id est egestas, ultricies tincidunt elit pretium. Phasellus posuere, metus in laoreet mattis, velit odio mollis risus, nec pharetra tellus odio in dolor. Maecenas tincidunt vulputate tempor."
+	var rightText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at lacus quis leo eleifend viverra in a est. Curabitur elit urna, lobortis et justo ut, aliquam imperdiet sapien. Maecenas gravida ante vitae hendrerit congue. Phasellus id erat ligula. Duis malesuada condimentum mattis. Donec tellus diam, rutrum sit amet nisl ultricies, accumsan commodo risus. Vestibulum elit ante, mollis nec enim at, imperdiet dictum erat. Proin laoreet dolor id est egestas, ultricies tincidunt elit pretium. Phasellus posuere, metus in laoreet mattis, velit odio mollis risus, nec pharetra tellus odio in dolor. Maecenas tincidunt END OF TEXT"
 	
 	var leftText1 = "Test aa"
 	var leftText2 = "Test bb"
@@ -22,10 +22,12 @@ class TableViewController: UITableViewController {
 		tableView.rowHeight = UITableViewAutomaticDimension
 		tableView.estimatedRowHeight = 30.0
 		
-		rightText = "One line on right"
-
 		leftText1 += " Longer"
-//		leftB += " Longer"
+		leftText2 += " Longer"
+
+//		rightText = "One line on right"
+		
+//		leftText1 += " Now it's Too much Longer"
 		
 	}
 	
